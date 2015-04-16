@@ -1,0 +1,20 @@
+Concurs
+	Principal.java
+		menu(){
+			private static final String[] OPCIONS_MENU ={"Concurs","GestiÃ³ Inscripcions","GestiÃ³ Qualificacions","Sortir"};
+		
+			Concurs.Interficie.sortida.menu(OPCIONS_MENU);
+			int opcio = Concurs.Interficie.entrada.opcioMenu(OPCIONS_MENU.length);
+			
+			Switch(opcio){
+				case 1:
+					GestioInscripcions.menu()
+					break;
+				case 2:
+					GestioQualificacions.menu();
+					break;
+				default:
+					break;
+			}
+		}
+			
